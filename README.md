@@ -1,50 +1,31 @@
-# React + TypeScript + Vite
+## How To Use
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
 
-Currently, two official plugins are available:
+```bash
+# Clone this repository
+$ git clone https://github.com/emsabbatini8416/blog-app
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Go into the repository
+$ cd blog-app
 
-## Expanding the ESLint configuration
+# Install dependencies
+$ npm install
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+# Run the app
+$ npm run dev
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-});
+# Open Browser
+$ localhost:5173
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Credits
 
-```js
-// eslint.config.js
-import react from "eslint-plugin-react";
+This software uses the following open source packages:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: "18.3" } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs["jsx-runtime"].rules,
-  },
-});
-```
+- [Vite](https://es.vitejs.dev/)
+- [Node.js](https://nodejs.org/)
+- [React.js](https://es.react.dev/)
+- [Typescript](https://www.typescriptlang.org/)
+- [Material UI](https://mui.com/)
+- [React-Query](https://tanstack.com/query/v3)
